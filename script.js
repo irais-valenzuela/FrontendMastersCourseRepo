@@ -1,6 +1,5 @@
 document.getElementById("toggle").addEventListener('change', () => {
-    // returns collection
-    const htmlTag = document.getElementsByTagName("html")[0]
+    const htmlTag = document.documentElement
     const dataThemeValue = htmlTag.getAttribute("data-theme")
 
     if (dataThemeValue === "dark") htmlTag.setAttribute("data-theme", "light")
