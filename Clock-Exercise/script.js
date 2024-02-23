@@ -1,4 +1,4 @@
-setInterval(() => {
+const updateTime = () => {
   const timePTag = document.getElementById("time");
 
   const currentTime = new Date().toLocaleTimeString();
@@ -7,4 +7,8 @@ setInterval(() => {
 
   timePTag.style.margin = "5px 0 0 5px";
   timePTag.style.color = "red";
-}, 3000);
+
+};
+
+updateTime()
+setInterval(updateTime, 3000);
